@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+
+$primary: #012734;
+$success: #25d366;
+$secondary: #ff0697;
+$bgbase:  #2D46B9;
+$b2white: #F8F8F8;
+$danger : #5EE6EB;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    $font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.navbar{
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(500px);
+}
+
+
+ header h1{
+     font-size: 160px;
+     color: #FFF;
+     font-weight: 600;
+ }
+
+ header{
+    position: relative;
+    // height: 100%;
+    // width: 100%;
+    // min-height: 100vh;
+    // min-width: 100%;
+    // background-image: linear-gradient(rgba(5,0,36,0.5),rgba(5,0,36,0.5));
+    //  background-size: contain;
+    // min-height: 100%;
+    
+    // width: 100%;
+    // height: 100vh;
+    //  background-image: linear-gradient(rgba(5,0,36,0.5),rgba(5,0,36,0.5));
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+ }
+
+
+
+
+
+// Audio music //
+header .content-audio{
+    position: absolute; 
+    padding-bottom: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999999;
+    
+    
+
+}
+
+
+/// background video ///
+// container//
+.video-content{
+    position: relative;
+    height: 100vh;
+}
+
+// video container//
+.back-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.back-video video{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+.heroe-container{
+    position: absolute;
+    top: 29%;
+    left: 3%;
+    
+    
+}
+
+
+  
+ .content{
+     text-align: center;
+ }
+
+ .content .heroe h1{
+     font-weight: 500;
+ }
+
+ .content .heroe .links a{
+     text-decoration: none;
+ }
+
+ 
+
+.boton {
+    color: $primary;
+}
+
+.photo-about img{
+    position: relative;
+    z-index: 1;
+}
+
+
+/* From uiverse.io */
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: $primary;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #ffff;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+ 
+
+    // header content animation//
+     .content{
+           color: #fff;
+     }
+     
+     .heroe-container{
+         animation: content 1s linear forwards;
+     }
+
+      @keyframes content{
+          0%{
+              transform: translate(100px);
+              opacity: 0;
+          }
+          100%{
+              transform: translate(0px);
+              opacity: 1;
+          }
+      }
+
+      
+     .content h1{
+         font-size: 110px;
+         line-height: 140px;
+         font-weight: 300;
+     }
+    
+
+    
+
+
+     // Button Whatsapp//
+    .container-boton{
+        background: #25d366;
+        border: 1px solid #fff;
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        right: 25px;
+        bottom: 30px;
+        padding: 20px;
+        transition: ease 0.3s;
+        animation: efecto 1.2s infinite;
+    }
+
+    .container-boton span i{
+        font-size: 50px;
+    }
+
+    .container-boton:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+ 
+    .btn-wsp{
+        width: 80px;
+        transition: ease 1s;
+    }
+
+ 
+// animation button whatsapp
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgb(62, 219, 240);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+
+
+
+
+/// card por 1  //
+
+.card-port-1{
+    background-color: $bgbase;
+}
+
+
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
