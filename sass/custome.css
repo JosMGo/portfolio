@@ -150,7 +150,7 @@ button.learn-more .circle .icon.arrow::before {
           transform: rotate(45deg);
 }
 
-button.learn-more .button-text {
+button.learn-more .button-text a {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
@@ -165,6 +165,7 @@ button.learn-more .button-text {
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 button:hover .circle {
