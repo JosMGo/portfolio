@@ -259,13 +259,16 @@ button {
      // Button Whatsapp//
     .container-boton{
         background: #25d366;
+        width: 5rem;
+        height: 5rem;
         border: 1px solid #fff;
         position: fixed;
         z-index: 999;
+        text-align: center;
         border-radius: 50%;
         right: 25px;
         bottom: 30px;
-        padding: 20px;
+        padding: 6px;
         transition: ease 0.3s;
         animation: efecto 1.2s infinite;
     }
@@ -306,6 +309,13 @@ button {
     background-color: $bgbase;
 }
 
+
+// Card Img size //
+
+.card img{
+    width: 15rem;
+    height: 15rem;
+}
 
 
 
